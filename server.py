@@ -8,7 +8,7 @@ import websockets
 import logging
 import sounddevice as sd
 import queue
-ip = #.#.#.#
+ip = 127.0.0.1 # local
 port = 2700
 from vosk import Model, KaldiRecognizer
 
