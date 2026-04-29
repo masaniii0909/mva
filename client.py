@@ -16,11 +16,10 @@ async def listen(uri):
             result = result.split(':')[1]
             print(result[2:-3])
 def main():
-    print('yea im here' * 5)
     result = websocket.recv()
     result = result[14:-3]
     print(result)
-    if wakeword in cleanresult:
+    if wakeword in result:
         print("hi")
 
 while True:
